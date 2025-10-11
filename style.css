@@ -1,43 +1,121 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #0055ff;
+  background: linear-gradient(135deg, #0056d6, #007bff);
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffe600;
+  transform: scale(1.05);
 }
 
+/* Main Content */
 main {
   max-width: 800px;
   background: white;
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+main h2 {
+  font-size: 1.8rem;
+  color: #0056d6;
   text-align: center;
-  padding: 15px;
-  background-color: #222;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f0f4ff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+  background: #e4ecff;
+  transform: translateY(-3px);
+}
+
+ul li a {
+  color: #0056d6;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
 }
