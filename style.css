@@ -119,3 +119,47 @@ footer p {
     font-size: 0.95rem;
   }
 }
+
+/* Styles for About Page */
+.guide {
+  line-height: 1.7;
+}
+
+.callout {
+  background: #f0f7ff;
+  border-left: 5px solid #0056d6;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.callout blockquote {
+  margin: 0.5rem 0;
+  font-style: italic;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background: #0056d6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #003ea6;
+  transform: translateY(-2px);
+}
+
+.note {
+  background: #fff8e6;
+  border-left: 5px solid #f5b400;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  font-style: italic;
+}
